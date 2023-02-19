@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Fredoka+One&family=Luckiest+Guy&family=Nunito&family=Roboto+Condensed:wght@300&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Signika:wght@500&family=Skranji:wght@700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/page4.css">
+    <title>Home</title>
+</head>
+
+
+
+<body class="fade">
+    <header class="navbar ">
+        <div class="fade logo">
+            <a href="#"><img class="logoImage"src="img/logo.png" alt="">
+        </a></div>
+        <div class="fade navBtn">
+            <style>
+                .navigation{
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin-top: 5px;
+    
+                }
+                .navigation a{
+                    text-transform: uppercase;
+                    color: black;
+                    font-size: 1em;
+                    transition-duration: 2s;
+                    font-family: 'Luckiest Guy', cursive;
+                    text-decoration: none;
+                    
+                    
+                }
+                a.bttn:hover {
+                    color: rgb(151, 147, 147);
+                    transition-duration: .5s;
+                    text-shadow: 0 0 10px #fff,
+                                 0 0 15px #fff,
+                                 0 0 20px #fff,
+                                 0 0 5px #fff,
+                                 0 0 22px #fff;
+                }
+            </style>
+            <ul class="navigation">
+                <li><a class="bttn" href="page1.html">home</a></li>
+                <li><a class="bttn" href="page2.html">service</a></li>
+                <li><a class="bttn" href="page3.html">about</a></li>
+                <li><a class="bttn" href="page4.html">contacts</a></li>
+                <li><a class="bttn" href="page5.html">shop</a></li>
+            </ul>
+            <ion-icon class="menuToggle" name="menu-outline"></ion-icon>
+            
+        </div>
+        <div class="searchBar">
+            <span class="icons">
+                <ion-icon class="icon searchBtn"name="search-outline"></ion-icon>
+                
+               </span>
+            <div class="searchBox">
+                <input type="text" name="" id="" placeholder="Search here.  .   .">
+            </div>
+            <ion-icon class="icon closeBtn" name="close-outline"></ion-icon>
+        </div>
+    </header>
+
+
+
+
+    
+    <div class="bodyContainer">
+        <div class="contactUs">
+            <div class="Inquiries">
+               <section>
+                     <h1>Contact Us</h1>
+                    <h4>Please use the contact form below for general inquiries.</h4>
+                    <form action="">
+                        <input type="text" id="Name" placeholder="Enter Name" class="me-1 name">
+                        <input type="text" id="Email" placeholder="Enter Email" class="email">
+                        <input type="text" id="Message" placeholder="Enter Message" class="message">
+                        <div class="submitbtn">
+                            <a class="btn mt-2 btn-sm btn-light "href="#">Submit</a>
+                        </div>
+                    </form>
+                </section>
+                
+            </div>
+            <div class="Headquarters">
+                <section>
+                    <h1>Clinic name Headquarters</h1>
+                    <h2>Phone:</h2>
+                    <p>+639203358822</p>
+                    <h2>Hours:</h2>
+                    <p>Monday - Friday: 8:00am to 5:00pm </p>
+                    <h2>Address:</h2>
+                    <div id="tooltip">
+                        <span>
+                            <a href="#" style="color: white;">Block 33 lot 4 Villas 
+                                Manila Hills  San Jose Rodriguez Rizal</a>
+                        </span>
+                        <span id="tooltipMap">
+                            <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=victoria%20villas%20metro%20manila%20hills&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    
+                                <a href="https://www.embedgooglemap.net">embed google maps iframe</a></iframe>
+                                <style>.gmap_canvas {height:500px;width:600px;}</style>
+                                </div>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+
+
+
+
+        <footer class="footer table-group-divider" >
+            <div class="clinicName">
+              <h1  style="font-family: 'Fredoka One', cursive;;">PAW</h1>
+              <h3 >Clinic and Supplies</h3>
+            </div>
+            <div class="number">
+              +639203358822
+            </div>
+            <div class="Pages">
+              <div class="fabs"><a href="#" class="fab fa-facebook-f"></a></div>
+              <div class="fabs"><a href="#" class="fab fa-twitter"></a></div>
+              <div class="fabs"><a href="#" class="fab fa-instagram"></a></div>
+              <div class="fabs"><a href="#" class="fab fa-linkedin"></a></div>
+              <div class="fabs"><a href="#" class="fab fa-discord"></a></div>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+<script src="javascript/javascript.js">
+    
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
