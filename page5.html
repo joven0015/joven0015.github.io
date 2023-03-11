@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Fredoka+One&family=Luckiest+Guy&family=Nunito&family=Roboto+Condensed:wght@300&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Signika:wght@500&family=Skranji:wght@700&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/page5.css">
     <link rel="stylesheet" href="css/page5body.css">
+    <link rel="stylesheet" href="css/page5addtocart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 
 
 
 <body class="fade">
+    
     <header class="navbar ">
         <div class="fade logo">
             <a href="#"><img class="logoImage"src="img/logo.png" alt="">
@@ -64,7 +67,7 @@
             <ion-icon class="menuToggle" name="menu-outline"></ion-icon>
             
         </div>
-        <div class="searchBar">
+        <div  class="searchBar">
             <span class="icons">
                 <ion-icon class="icon searchBtn"name="search-outline"></ion-icon>
                 
@@ -87,122 +90,56 @@
 
     
     <div class="bodyContainer " id="bodyContainer">
-        <div style="height: 100vh;">
+        <!-- <div>
             <div class="cartBox" id="cartBox"></div>
         </div>
-        <div class="sidenav">
-            <div class="categories"></div>
-            <div class="price">
-                <div class="min"></div>
-                <div class="max"></div>
-            </div>
-            <div class="brand"></div>
-        </div>
-        <div class="itemContainer">
-            <div class="soap">
-                <div class="card" >
-                    <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
+        <div class="fade sidenav">
+                <div class="categories">
+                    <div class="soap"></div>
                 </div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
+                <div class="price">
+                    <div class="min"></div>
+                    <div class="max"></div>
+                </div>
+                <div class="brand"></div>
             </div>
-            <div class="toys">
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-            </div>
-            <div class="medecine">
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-            </div>
-            <div class="fashion">
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
-                <div class="card" ></div>
-                <div id="img"></div>
-                    <div id="id"></div>
-                    <div id="name"></div>
-                    <div id="price"></div>
-                    <div id="addtocart"></div>
+
+        <div class="itemContainer">
+        </div> -->
+        <div class="sidenav">
+
+        </div>
+        <div id="root"></div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
             </div>
         </div>
-
-
-
-        <footer class="footer table-group-divider" >
-            <div class="clinicName">
-              <h1  style="font-family: 'Fredoka One', cursive;;">PAW</h1>
-              <h3 >Clinic and Supplies</h3>
-            </div>
-            <div class="number">
-              +639203358822
-            </div>
-            <div class="Pages">
-              <div class="fabs"><a href="#" class="fab fa-facebook-f"></a></div>
-              <div class="fabs"><a href="#" class="fab fa-twitter"></a></div>
-              <div class="fabs"><a href="#" class="fab fa-instagram"></a></div>
-              <div class="fabs"><a href="#" class="fab fa-linkedin"></a></div>
-              <div class="fabs"><a href="#" class="fab fa-discord"></a></div>
-            </div>
-            
-        </footer>
     </div>
+    <!-- <footer class="footer table-group-divider" >
+        <div class="clinicName">
+          <h1  style="font-family: 'Fredoka One', cursive;;">PAW</h1>
+          <h3 >Clinic and Supplies</h3>
+        </div>
+        <div class="number">
+          +639203358822
+        </div>
+        <div class="Pages">
+          <div class="fabs"><a href="#" class="fab fa-facebook-f"></a></div>
+          <div class="fabs"><a href="#" class="fab fa-twitter"></a></div>
+          <div class="fabs"><a href="#" class="fab fa-instagram"></a></div>
+          <div class="fabs"><a href="#" class="fab fa-linkedin"></a></div>
+          <div class="fabs"><a href="#" class="fab fa-discord"></a></div>
+        </div>
+        
+    </footer> -->
 </body>
+<script src="javascript/addtocart.js"></script>
 <script src="javascript/page5.js">
     
 </script>

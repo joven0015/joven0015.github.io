@@ -268,7 +268,7 @@ body{
     .benefeciaries img{
     
    
-        border-radius: 100px;
+        border-radius: 200px;
         height: 25vh;
         margin: 10vh 10vh 0 10vh;
         transition-duration: .7s;
@@ -302,11 +302,13 @@ body{
 .kaparehas{
     
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
 
 }
 .kaparehas img{
-    border-radius: 100px;
+    border-radius: 200px;
     height: 25vh;
     margin: 10vh 10vh 5vh 10vh;
     transition-duration: .7s;
@@ -438,8 +440,9 @@ h1,h3,.number{
         margin: 0;
     }
 }
-@media (max-width:965px)
+@media (max-width:1295px)
 {
+    
     .benefeciaries{
         height: 70%;
     }
@@ -461,7 +464,7 @@ h1,h3,.number{
         position: absolute;
         opacity: 0;
         visibility: hidden;
-        left: 100%;
+        
         z-index: 10;
     }
     header.open .navigation
@@ -495,4 +498,17 @@ h1,h3,.number{
     .philosophy{
         height: 80%;
     }
+}
+@media(max-width:378px){
+    body{
+        scroll-margin-block;
+        overflow-x: hidden;
+        height: 100%;
+        background-attachment:inherit;
+    }
+}
+@media(max-width:374px){
+   .bodyContainer{
+    width: 135%;
+   }
 }

@@ -150,7 +150,7 @@ body{
     from {right: -1000px;}
     to {right: 0;}
   }
-  
+
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
@@ -163,9 +163,13 @@ body{
 
 
 .bodyContainer{
+    
+    display: flex;
+    flex-direction: row;
     background-color: rgba(0, 0, 0, 0.849);
     z-index: 1;
 }
+
 .closecart{
     position: fixed;
     right: 3%;
@@ -174,37 +178,13 @@ body{
     margin-left: 2vh;
 }
 .cartBox{
-    visibility: hidden;
+    visibility: visible;
     position: fixed;
     right: 0;
     height: 100%;
     width: 30%;
-    background-color: #fff;
-}
-.cart a, .closecart a{
-    font-size: 2em;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
-
-.cart a:hover, .closecart a:hover{
-    color: white;
-    transition-duration: .3s;
-
-}
-.openCartBox .cartBox{
-    visibility: visible;
-    transition-duration: 1s;
-    animation:infinite;
-}
- .hidden, .closecart{
-    visibility: hidden;
-    transition-duration: 0;
-}
-.show{
-    transition-duration: 0;
-    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -227,10 +207,13 @@ body{
 
 
 footer{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    z-index: 10;
 }
 
 .footer{

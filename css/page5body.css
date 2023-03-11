@@ -1,3 +1,60 @@
-img{
+
+.itemContainer{
+    height: 100%;
+    width: 76%;
+    display: flex;
+    margin-left: 24%;
+    flex-wrap: wrap;
     
+    justify-content: center, space-around,space-between,space-evenly;
+}
+.card{
+    background-color: red;
+    height: 32vh;
+    width: 25vh;
+    margin: 2vh;
+}
+#img, #img img{
+    background-color: blue;
+    height: 65%;
+    width: 100%;
+}
+#id{
+    height: 15%;
+    width: 100%;
+    background-color: aqua;
+}
+#boxer{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+#price{
+    flex-grow: 1;
+    
+    background-color: yellow;
+}
+#addtocart{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+#addtocart a{
+    text-decoration: none;
+    color: black;
+}
+
+title{
+    margin: 0;
+
+}
+
+.cartImg{
+    height: 25vh;
+    width: 25vh;
+    background-color: red;
 }
